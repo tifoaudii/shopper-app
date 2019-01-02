@@ -14,6 +14,7 @@
 		29384B2121DC9C16004B4BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29384B2021DC9C16004B4BFE /* Assets.xcassets */; };
 		29384B2421DC9C16004B4BFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29384B2221DC9C16004B4BFE /* LaunchScreen.storyboard */; };
 		29384B2F21DC9C16004B4BFE /* shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29384B2E21DC9C16004B4BFE /* shopperTests.swift */; };
+		29384B3C21DCA1FC004B4BFE /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29384B3B21DCA1FC004B4BFE /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		29384B2A21DC9C16004B4BFE /* shopperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shopperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29384B2E21DC9C16004B4BFE /* shopperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopperTests.swift; sourceTree = "<group>"; };
 		29384B3021DC9C16004B4BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29384B3B21DCA1FC004B4BFE /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		29384B1521DC9C15004B4BFE /* shopper */ = {
 			isa = PBXGroup;
 			children = (
+				29384B3A21DCA1D6004B4BFE /* Views */,
 				29384B3921DC9C21004B4BFE /* Controller */,
 				29384B1621DC9C15004B4BFE /* AppDelegate.swift */,
 				29384B1A21DC9C15004B4BFE /* Main.storyboard */,
@@ -105,6 +108,14 @@
 				29384B1821DC9C15004B4BFE /* MainVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		29384B3A21DCA1D6004B4BFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29384B3B21DCA1FC004B4BFE /* CurrencyTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +221,7 @@
 			files = (
 				29384B1921DC9C15004B4BFE /* MainVC.swift in Sources */,
 				29384B1721DC9C15004B4BFE /* AppDelegate.swift in Sources */,
+				29384B3C21DCA1FC004B4BFE /* CurrencyTextField.swift in Sources */,
 				29384B1F21DC9C15004B4BFE /* shopper.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
