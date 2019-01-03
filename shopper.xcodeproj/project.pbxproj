@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290148A121DDAE70007373CF /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290148A021DDAE70007373CF /* Wage.swift */; };
+		290148A221DDB008007373CF /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290148A021DDAE70007373CF /* Wage.swift */; };
 		29384B1721DC9C15004B4BFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29384B1621DC9C15004B4BFE /* AppDelegate.swift */; };
 		29384B1921DC9C15004B4BFE /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29384B1821DC9C15004B4BFE /* MainVC.swift */; };
 		29384B1C21DC9C15004B4BFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29384B1A21DC9C15004B4BFE /* Main.storyboard */; };
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		290148A021DDAE70007373CF /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 		29384B1321DC9C15004B4BFE /* shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29384B1621DC9C15004B4BFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29384B1821DC9C15004B4BFE /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -60,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2901489F21DDAE4A007373CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				290148A021DDAE70007373CF /* Wage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		29384B0A21DC9C15004B4BFE = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +92,7 @@
 		29384B1521DC9C15004B4BFE /* shopper */ = {
 			isa = PBXGroup;
 			children = (
+				2901489F21DDAE4A007373CF /* Models */,
 				29384B3A21DCA1D6004B4BFE /* Views */,
 				29384B3921DC9C21004B4BFE /* Controller */,
 				29384B1621DC9C15004B4BFE /* AppDelegate.swift */,
@@ -221,6 +233,7 @@
 			files = (
 				29384B1921DC9C15004B4BFE /* MainVC.swift in Sources */,
 				29384B1721DC9C15004B4BFE /* AppDelegate.swift in Sources */,
+				290148A121DDAE70007373CF /* Wage.swift in Sources */,
 				29384B3C21DCA1FC004B4BFE /* CurrencyTextField.swift in Sources */,
 				29384B1F21DC9C15004B4BFE /* shopper.xcdatamodeld in Sources */,
 			);
@@ -231,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29384B2F21DC9C16004B4BFE /* shopperTests.swift in Sources */,
+				290148A221DDB008007373CF /* Wage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
