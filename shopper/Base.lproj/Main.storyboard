@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="shopper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="shopper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hf6-ac-58m"/>
                         <viewControllerLayoutGuide type="bottom" id="Auj-7i-dWj"/>
@@ -25,14 +25,14 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="mCD-q6-UaS">
-                                        <rect key="frame" x="157.66666666666666" y="60" width="60" height="60"/>
+                                        <rect key="frame" x="147.66666666666666" y="60" width="80" height="80"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="DuT-bx-ycI"/>
-                                            <constraint firstAttribute="height" constant="60" id="cLp-z7-PCC"/>
+                                            <constraint firstAttribute="width" constant="80" id="DuT-bx-ycI"/>
+                                            <constraint firstAttribute="height" constant="80" id="cLp-z7-PCC"/>
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="itb-Af-7rK" customClass="CurrencyTextField" customModule="shopper" customModuleProvider="target">
-                                        <rect key="frame" x="37.666666666666657" y="175" width="300" height="40"/>
+                                        <rect key="frame" x="37.666666666666657" y="195" width="300" height="40"/>
                                         <color key="backgroundColor" red="0.1982868020304569" green="0.1982868020304569" blue="0.1982868020304569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="0W4-xf-1dI"/>
@@ -40,15 +40,30 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nnK-9u-sNz" customClass="CurrencyTextField" customModule="shopper" customModuleProvider="target">
+                                        <rect key="frame" x="37.666666666666657" y="255" width="300" height="40"/>
+                                        <color key="backgroundColor" red="0.19828680200000001" green="0.19828680200000001" blue="0.19828680200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="2jH-UE-WyX"/>
+                                            <constraint firstAttribute="height" constant="40" id="4TQ-4T-gLD"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.083396464095260331" green="0.047621028118593797" blue="0.22826776649746194" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
+                                    <constraint firstItem="nnK-9u-sNz" firstAttribute="leading" secondItem="itb-Af-7rK" secondAttribute="leading" id="3Ah-eg-MEr"/>
                                     <constraint firstItem="mCD-q6-UaS" firstAttribute="top" secondItem="2CT-TD-ada" secondAttribute="top" constant="60" id="4Kc-3D-BqK"/>
                                     <constraint firstItem="itb-Af-7rK" firstAttribute="top" secondItem="mCD-q6-UaS" secondAttribute="bottom" constant="55" id="53Z-Ml-VlN"/>
                                     <constraint firstItem="mCD-q6-UaS" firstAttribute="centerX" secondItem="2CT-TD-ada" secondAttribute="centerX" id="AQC-3R-bol"/>
+                                    <constraint firstItem="nnK-9u-sNz" firstAttribute="trailing" secondItem="itb-Af-7rK" secondAttribute="trailing" id="L0H-zq-Rt4"/>
+                                    <constraint firstItem="nnK-9u-sNz" firstAttribute="width" secondItem="itb-Af-7rK" secondAttribute="width" id="dK7-lM-NYI"/>
                                     <constraint firstItem="itb-Af-7rK" firstAttribute="centerX" secondItem="2CT-TD-ada" secondAttribute="centerX" id="hsk-eu-81d"/>
+                                    <constraint firstItem="nnK-9u-sNz" firstAttribute="top" secondItem="itb-Af-7rK" secondAttribute="bottom" constant="20" id="u4P-oW-KcY"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -60,6 +75,10 @@
                             <constraint firstItem="2CT-TD-ada" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="s4f-c1-jJe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="priceTextField" destination="nnK-9u-sNz" id="re3-21-KN3"/>
+                        <outlet property="wageTextField" destination="itb-Af-7rK" id="Dsd-lF-hx6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
